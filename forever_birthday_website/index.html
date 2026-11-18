@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff4f6">
+
+    <title>For Someone Special ♡</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Existing CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- WATERMARK BACKGROUND CSS -->
+   
+    <style>
+    body {
+        position: relative;
+        isolation: isolate;
+        background-color: #fff4f6;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+
+        background-image:
+            linear-gradient(
+                rgba(255, 244, 248, 0.20),
+                rgba(255, 244, 248, 0.20)
+            ),
+            url("./assets/photos/rajlaxmi-watermark.png");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Mobile screens */
+    @media (max-width: 768px) {
+        body::before {
+            position: fixed;
+            inset: 0;
+
+            background-size: 100% auto;
+            background-position: top center;
+            background-repeat: repeat-y;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+    <!-- Background Hearts -->
+    <div class="hearts-bg" aria-hidden="true"></div>
+
+    <!-- BACKGROUND BIRTHDAY MUSIC -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="./assets/music/Birthday-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Control -->
+    <button
+        id="musicBtn"
+        class="music-control"
+        type="button"
+        aria-label="Play background music">
+        🎵 Play Music
+    </button>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            ♡ <span>Rajlaxmi (Jhia)</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav" aria-label="Main navigation">
+
+            <a class="active" href="index.html">Home</a>
+
+            <a href="memories.html">Our Memories</a>
+
+            <a href="gallery.html">Photo Gallery</a>
+
+            <a href="videos.html">Little Videos</a>
+
+            <a href="letter.html">A Letter</a>
+
+            <a href="surprise.html">Surprise ✨</a>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <p class="eyebrow">
+                A little corner of the internet, made just for you
+            </p>
+
+            <div class="hero-heart">♡</div>
+
+            <h1>
+                Some people make<br>
+                <em>life more beautiful.</em>
+            </h1>
+
+            <p class="hero-copy">
+                And you are one of those people. This little website holds a few
+                memories, a lot of love, and wishes that words can never fully explain.
+            </p>
+
+            <div class="hero-actions">
+
+                <a class="btn" href="letter.html">
+                    Read your birthday letter <span>→</span>
+                </a>
+
+                <a class="text-link" href="gallery.html">
+                    Explore our memories
+                </a>
+
+            </div>
+
+            <div class="date-pill">
+                ✦ November 23 · Your special day ✦
+            </div>
+
+        </section>
+
+        <!-- INTRODUCTION CARDS -->
+        <section class="intro-grid wrap">
+
+            <article class="soft-card">
+
+                <span class="card-icon">🌷</span>
+
+                <h2>One of a kind</h2>
+
+                <p>
+                    Your kindness, laughter and presence make ordinary days feel special.
+                </p>
+
+            </article>
+
+            <article class="soft-card">
+
+                <span class="card-icon">📸</span>
+
+                <h2>Little moments</h2>
+
+                <p>
+                    Every photo has a story. Every story is a memory worth keeping.
+                </p>
+
+            </article>
+
+            <article class="soft-card">
+
+                <span class="card-icon">💌</span>
+
+                <h2>Always appreciated</h2>
+
+                <p>
+                    No matter where life takes us, you will always have a special place in my heart.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- CLOSING SECTION -->
+        <section class="closing wrap">
+
+            <p class="eyebrow">
+                A wish from the heart
+            </p>
+
+            <h2>
+                May this new year of your life be as lovely as your soul.
+            </h2>
+
+            <a class="btn btn-light" href="surprise.html">
+                One more little surprise ✨
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        Made with warmth, memories & lots of love <span>♡</span>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

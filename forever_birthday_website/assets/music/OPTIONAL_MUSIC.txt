@@ -1,0 +1,1 @@
+Optional: add a royalty-free MP3 here if you later want background music. Browser autoplay is restricted, so music should start only after a visitor clicks a play button.
